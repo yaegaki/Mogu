@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\dll\MoguHost_x86.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\dll\MoguHost_x64.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\dll\MoguStore_x86.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\dll\MoguStore_x64.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\dll\nethost_x86.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\dll\nethost_x64.dll" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dnlib" Version="3.2.0" />
+    <PackageReference Include="SharpDisasm" Version="1.1.11" />
+  </ItemGroup>
+</Project>
